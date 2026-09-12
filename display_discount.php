@@ -19,19 +19,29 @@ $discount_price = $list_price - $discount;
         <h1>This page is under construction</h1>
 
         <label>Product Description:</label>
-        <span><?php echo $product_description; ?></span><br>
+        <span>
+            <?php echo htmlspecialchars($product_description); ?>
+        </span><br>
 
         <label>List Price:</label>
-        <span><?php echo '$' . number_format($list_price, 2); ?></span><br>
+        <span>
+            <?php echo htmlspecialchars('$' . number_format($list_price, 2)); ?>
+        </span><br>
 
         <label>Standard Discount:</label>
-        <span><?php echo number_format($discount_percent, 1) . '%'; ?></span><br>
+        <span>
+            <?php echo htmlspecialchars(number_format($discount_percent, 1) . '%'); ?>
+        </span><br>
 
         <label>Discount Amount:</label>
-        <span><?php echo '$' . number_format($discount, 2); ?></span><br>
+        <span>
+            <?php echo '$' . number_format($discount, 2); ?>
+        </span><br>
 
         <label>Discount Price:</label>
-        <span><?php echo '$' . number_format($discount_price, 2); ?></span><br>
+        <span>
+            <?php echo '$' . number_format($discount_price, 2); ?>
+        </span><br>
     </main>
 </body>
 </html>
