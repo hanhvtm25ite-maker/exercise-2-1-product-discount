@@ -10,13 +10,13 @@ $discount_price = $list_price - $discount;
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Product Discount Calculator</title>
+    <h1>Product Discount Calculator</h1>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
     <main>
-        <h1>This page is under construction</h1>
+        <h1>Product Discount Calculator</h1>
 
         <label>Product Description:</label>
         <span>
